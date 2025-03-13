@@ -1,0 +1,24 @@
+	
+	---
+	const {header} = Astro.props;
+	---
+
+	<article>
+  <h2>{header}</h2>
+  <p>Felles tekst for alle cards</p>
+  <div class="card_design">
+  <slot />
+  </div>
+</article>
+
+<style>
+	article{
+		border: solid 1px black;
+		padding: 10px;
+		background-color: rgb(240, 119, 206);
+	}
+	p, .card_design :global(p){
+		color: blue;
+	}
+
+</style>

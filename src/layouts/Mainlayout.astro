@@ -1,0 +1,34 @@
+---
+import Button from "../components/Button.astro";
+import "../styles/style.css";
+import Card from "../components/Card.astro";
+import Navigation from "../components/Navigation.astro";
+const {title} = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>{title}</title>
+  </head>
+  <body>
+    <h1>{title}</h1>
+    <Navigation />
+    <Button variant="primary" size="small">Min tekst her</Button>
+    <Button variant="secondary" size="small">Min andre tekst her</Button>
+    <main>
+      <slot/>
+    </main>
+  </body>
+</html>
+<style>
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px
+    }
+</style>
