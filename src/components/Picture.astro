@@ -1,0 +1,15 @@
+---
+const { img } = Astro.props;
+---
+
+<img src={img} alt="Bilde" />
+<style>
+  img {
+    margin: 0 auto;
+    width: 60%;
+    padding: 5px;
+  }
+  img:hover {
+    opacity: 50%;
+  }
+</style>

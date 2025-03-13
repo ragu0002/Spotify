@@ -1,0 +1,13 @@
+---
+const { img, text } = Astro.props;
+---
+
+<article>
+  <img src={img} alt="bilde" />
+  <p>{text}</p>
+</article>
+<style>
+  article:hover {
+    opacity: 50%;
+  }
+</style>
