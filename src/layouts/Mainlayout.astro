@@ -1,9 +1,7 @@
 ---
-import Button from "../components/Button.astro";
 import "../styles/style.css";
-import Card from "../components/Card.astro";
-import Navigation from "../components/Navigation.astro";
-const {title} = Astro.props
+import Header_1 from "../components/Header_1.astro";
+const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -16,19 +14,15 @@ const {title} = Astro.props
     <title>{title}</title>
   </head>
   <body>
-    <h1>{title}</h1>
-    <Navigation />
-    <Button variant="primary" size="small">Min tekst her</Button>
-    <Button variant="secondary" size="small">Min andre tekst her</Button>
+    <Header_1 />
     <main>
-      <slot/>
+      <slot />
     </main>
   </body>
 </html>
 <style>
-    main{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px
-    }
+  main {
+    display: flex;
+    justify-content: start;
+  }
 </style>
