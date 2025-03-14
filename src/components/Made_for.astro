@@ -1,11 +1,11 @@
 ---
-const { img, text, mix, color } = Astro.props;
+const { img, text, made_for } = Astro.props;
 ---
 
 <article>
   <div class="img_container">
     <img src={img} alt="bilde" />
-    <h2 style=`background-color:${color}`>{mix}</h2>
+    <h2>{made_for}</h2>
   </div>
   <p>{text}</p>
 </article>
@@ -22,9 +22,11 @@ const { img, text, mix, color } = Astro.props;
     grid-column: 1 / span 2;
   }
   .img_container h2 {
-    grid-row: 2 / span 1;
+    grid-row: 1 / span 1;
     grid-column: 1 / span 2;
     color: white;
-    padding: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(220, 74, 210, 0.498);
   }
 </style>

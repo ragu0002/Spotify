@@ -1,0 +1,45 @@
+---
+import Global from "./Global.astro";
+const { info } = Astro.props;
+---
+
+<h1>{info}</h1>
+<section class="flex">
+  <Global
+    img="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill"
+    text="Norge"
+    mix="Global Music Norge"
+    color="red"
+  />
+  <Global
+    img="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill"
+    text="Sverige"
+    mix="Global Music Sverige"
+    color="green"
+  />
+  <Global
+    img="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill"
+    text="Denmark"
+    mix="Global Music Denmark"
+    color="blue"
+  />
+  <Global
+    img="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill"
+    text="Brasil"
+    mix="Global Music Canada"
+    color="pink"
+  />
+  <Global
+    img="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill"
+    text="USA"
+    mix="Global Music United-States"
+    color="brown"
+  />
+</section>
+<style>
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+</style>

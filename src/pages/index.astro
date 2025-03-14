@@ -4,6 +4,8 @@ import SpesieltCont from "../components/Spesielt_cont.astro";
 import Mainlayout from "../layouts/Mainlayout.astro";
 import Pictures from "../components/Pictures.astro";
 import Button from "../components/Button.astro";
+import MadeForCont from "../components/Made_for_cont.astro";
+import GlobalCont from "../components/Global_cont.astro";
 ---
 
 <Mainlayout title="Spotify">
@@ -15,12 +17,10 @@ import Button from "../components/Button.astro";
       <Button variant="secondary" size="small">Podcast</Button>
     </div>
     <Cards />
-    <h1>Laget for spesielt for deg</h1>
-    <SpesieltCont />
-    <h1>Ha en fin dag!</h1>
-    <SpesieltCont />
-    <h1>Populære albumer</h1>
-    <SpesieltCont />
+
+    <SpesieltCont info="Spesielt for deg" />
+    <MadeForCont info="Ha en fin dag!" />
+    <GlobalCont info="Top 50" />
   </div>
 </Mainlayout>
 <style>
